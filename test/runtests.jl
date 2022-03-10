@@ -8,6 +8,18 @@ using Trixi
 
 versioninfo(verbose=true)
 
+# Find version of CPUSummary and display additional information, see
+# https://discourse.julialang.org/t/how-to-find-out-the-version-of-a-package-from-its-module/37755/15
+using CPUSummary
+using TOML
+CPUSummary_project = TOML.parsefile(joinpath(pkgdir(CPUSummary), "Project.toml"))
+CPUSummary_version = VersionNumber(CPUSummary_project["version"])
+if CPUSummary_version == v"0.1.14"
+  @info "CPUSummary" CPUSummary_version CPUSummary.USE_HWLOC
+else
+  @info "CPUSummary" CPUSummary_version
+end
+
 @testset "3D DGMulti failures" begin
   @time @testset "elixir_euler_weakform.jl (Hexahedral elements)" begin
     # trixi_include(
