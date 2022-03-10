@@ -1,0 +1,13 @@
+name = "TrixiDebug"
+uuid = "70f39991-4565-4a5b-a810-b65302b4e3a6"
+authors = ["Hendrik Ranocha <mail@ranocha.de> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
