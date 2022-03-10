@@ -15,9 +15,9 @@ using TOML
 CPUSummary_project = TOML.parsefile(joinpath(pkgdir(CPUSummary), "Project.toml"))
 CPUSummary_version = VersionNumber(CPUSummary_project["version"])
 if CPUSummary_version == v"0.1.14"
-  @info "CPUSummary" CPUSummary_version CPUSummary.USE_HWLOC
+  @info "CPUSummary" CPUSummary_version isdefined(CPUSummary, :safe_topology_load!) CPUSummary.USE_HWLOC
 else
-  @info "CPUSummary" CPUSummary_version
+  @info "CPUSummary" CPUSummary_version isdefined(CPUSummary, :safe_topology_load!)
 end
 
 @testset "3D DGMulti failures" begin
