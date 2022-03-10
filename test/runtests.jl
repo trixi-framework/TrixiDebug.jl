@@ -111,7 +111,7 @@ versioninfo(verbose=true)
     # )
     @info "$(@__FILE__), l. $(@__LINE__): New setup"
 
-    dg = DGMulti(polydeg = 3, element_type = Tet(), approximation_type = Polynomial(),
+    dg = DGMulti(polydeg = 3, element_type = Hex(), approximation_type = Polynomial(),
                 surface_integral = SurfaceIntegralWeakForm(FluxHLL()),
                 volume_integral = VolumeIntegralWeakForm())
     @info "$(@__FILE__), l. $(@__LINE__): Constructed dg"
