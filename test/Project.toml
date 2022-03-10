@@ -5,3 +5,27 @@ Trixi = "a7f1ee26-1774-49b1-8366-f1abc58fbfcb"
 
 [compat]
 Trixi = "0.4.23"
+
+# Different package versions between
+# - working https://github.com/trixi-framework/Trixi.jl/runs/5387423957?check_suite_focus=true
+# - failing https://github.com/trixi-framework/TrixiDebug.jl/runs/5492410761?check_suite_focus=true#step:6:356
+#
+# - CPUSummary v0.1.8 vs. CPUSummary v0.1.14
+# - CloseOpenIntervals v0.1.5 vs. CloseOpenIntervals v0.1.6
+# - Compat v3.41.0 vs Compat v3.42.0
+# - FillArrays v0.13.0 vs. FillArrays v0.13.1
+# - GeometryBasics v0.4.1 vs. GeometryBasics v0.4.2
+# - HostCPUFeatures v0.1.6 vs. HostCPUFeatures v0.1.7
+# - InverseFunctions v0.1.2 vs. InverseFunctions v0.1.3
+# - LayoutPointers v0.1.5 vs. LayoutPointers v0.1.6
+# - LogExpFunctions v0.3.6 vs. LogExpFunctions v0.3.7
+# - PolyesterWeave v0.1.4 vs. PolyesterWeave v0.1.5
+# - RecursiveArrayTools v2.24.2 vs. RecursiveArrayTools v2.25.0
+# - SLEEFPirates v0.6.30 vs. SLEEFPirates v0.6.31
+# - SciMLBase v1.26.3 vs. SciMLBase v1.28.0
+# - StrideArraysCore v0.2.12 vs. StrideArraysCore v0.2.13
+# - SummationByPartsOperators v0.5.12 vs. SummationByPartsOperators v0.5.14
+# - Tables v1.6.1 vs. Tables v1.7.0
+# - TimerOutputs v0.5.15 vs. TimerOutputs v0.5.16
+# - Trixi v0.4.24-re vs. Trixi v0.4.23
+# - VectorizationBase v0.21.24 vs. VectorizationBase v0.21.25
