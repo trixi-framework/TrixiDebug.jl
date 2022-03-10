@@ -23,7 +23,7 @@ Trixi = "a7f1ee26-1774-49b1-8366-f1abc58fbfcb"
 # VectorizationBase = "3d5dd08c-fd9d-11e8-17fa-ed2836048c2f"
 
 [compat]
-CPUSummary = "=0.1.8"
+CPUSummary = "=0.1.14" # CI passes with CPUSummary = "=0.1.8"
 # CloseOpenIntervals = "=0.1.5"
 # Compat = "=3.41.0"
 # FillArrays = "=0.13.0"
